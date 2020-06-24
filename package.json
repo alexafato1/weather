@@ -4,7 +4,7 @@
   "description": "",
   "main": "weather.js",
   "scripts": {
-    "devStart": "nodemon"
+    "devStart": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
