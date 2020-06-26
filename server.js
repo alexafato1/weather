@@ -12,13 +12,13 @@ app.use(express.static('public'))
 
 app.post('/weather', (req, res) => {
   console.log(req.body)
-  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${req.body.lat}&lon=${req.body.lon}&appid=${API}`
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${req.body.lat}&lon=${req.body.lon}&appid=${API}&units=metric`
   axios({
     url: url,
     
-    responseType: 'json'
+    responseType: 'json',
+    
   }).then(data => res.json(data.data))
-  console.log(req.body)
   console.log(url)
   
 })

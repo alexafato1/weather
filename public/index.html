@@ -7,8 +7,10 @@
     <link href="style.css" rel="stylesheet">
     <script type="text/javascript" 
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcgcs949NDrGdBBmRoT8pWTf49wLR6lWU&libraries=places"></script>
+    <script  defer  src = " https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.min.js "> </script>
     
     <script defer src="script.js"></script>
+  
     <title>Weather App</title>
 </head>
 <body>
@@ -22,25 +24,30 @@
        </div>
     <div class="content">
         <div class="general-information">
-            <div class="status">Enter A Location</div>
-            <div class="location">To Find The Weather</div>
+            <div class="status" data-status s>Enter A Location</div>
+            <div class="location" data-location > To Find The Weather</div>
         </div>
-        <div class="detail-section"></div>
+
+        <div class="section">
         <div class="detail">
            <div class="title">Wind</div> 
-           <div class="value">TBD</div> 
+           <div class="value" data-wind>TBD</div> 
         </div>
-        <div class="detail">
+        <div class="detail border">
             <div class="title">Temperature</div> 
-            <div class="value">TBD</div> 
+            <div class="value" data-temperature>TBD</div> 
          </div>
          <div class="detail">
             <div class="title">Precipitation</div> 
-            <div class="value">TBD</div> 
+            <div class="value" data-precipitation >TBD</div> 
          </div>
+        </div>
          <div class="city-search-container">
              <input type="text" class="city-search" data-city-search placeholder="Enter location">
-         </div>
+         
+       
+        </div>
+     
     </div>
     </div>
 </body>
